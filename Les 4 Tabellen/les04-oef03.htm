@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table#border{
+            border: solid 3px black;
+            border-collapse: collapse;
+        }
+
+        table#border td{
+            border: solid 1px black;
+            height: 50px;
+            margin: 4px;
+            text-align: center;
+        }
+
+        table#border th{
+            border: solid 1px black;
+            height: 50px;
+            margin: 4px;
+            text-align: center;
+        }
+
+        .grijs{
+            background-color: #CDCDCD;
+        }
+
+        .groen{
+            background-color: #96E78E;
+        }
+
+        .rood{
+            background-color: #CC3D34;
+        }
+
+    </style>
+</head>
+<body>
+
+    <table id="border">
+
+        <caption>Aantal koppen koffie per persoon</caption>
+
+        <tr>
+            <td rowspan="5"> <img src="afbeeldingen/koffie.jpg" alt=""></td>
+            <th class="grijs">Naam</th>
+            <th class="grijs">Aantal koppen</th>
+            <th class="grijs">Type</th>
+            <th class="grijs">Suiker</th>
+
+        </tr>
+
+        <tr>
+            <td>Jasper Vervliet</td>
+            <td>10</td>
+            <td>Zo zwart mogelijk</td>
+            <td class="groen">Ja</td>
+
+
+        </tr>
+
+        <tr>
+            <td>Maaike van den Bulck</td>
+            <td class="groen">15</td>
+            <td>Normaal</td>
+            <td class="rood">Nee</td>
+
+
+        </tr>
+
+        <tr>
+            <td>Nele Beerten</td>
+            <td class="rood">0</td>
+            <td>Deca</td>
+            <td class="groen">Ja</td>
+
+        </tr>
+
+        <tr>
+            <td>Anja Raymaekers</td>
+            <td>6</td>
+            <td>Normaal</td>
+            <td class="groen">Ja</td>
+
+        </tr>
+
+
+
+    </table>
+
+
+
+
+    
+</body>
+</html>

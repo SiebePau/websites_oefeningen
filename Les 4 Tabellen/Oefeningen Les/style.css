@@ -1,0 +1,48 @@
+body{
+    background-color: aliceblue;
+}
+
+table.border{
+    margin: 1em;
+    border: solid 2px red;
+    border-collapse: collapse;
+}
+
+table.border td{
+    border: solid 2px #c03d1e;
+    padding: 25px;
+
+}
+
+table.border th{
+    border: solid 2px #c03d1e;
+    padding: 5px;
+    background-color:#f4c4ba;
+}
+
+/* 2de tabel aanmaken styling */
+
+table.border2{
+    margin: 1em;
+    border: solid 2px red;
+    border-collapse: collapse;
+}
+
+table.border2 td{
+    border: solid 2px #c03d1e;
+    padding: 25px;
+
+}
+
+table.border2 th{
+    border: solid 2px #c03d1e;
+    padding: 5px;
+    background-color:#f4c4ba;
+}
+
+/* Caption vanonder zetten */
+
+/*caption{
+    padding: 10px;
+    caption-side: bottom;
+} */

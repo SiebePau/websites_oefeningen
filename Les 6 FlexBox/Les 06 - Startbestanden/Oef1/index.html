@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        .kompas-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .label {
+            position: absolute;
+            font-size: 25px;
+            color: white;
+        }
+
+        .foto {
+            height: 500px;
+            width: 500px;
+        }
+
+               .noord {
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .zuid {
+            bottom: 5%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="kompas-container">
+
+        <div class="label noord">Noord</div>
+        <div class="label west">West</div>
+        <div class="label oost">Oost</div>
+        <div class="label zuid">Zuid</div>
+
+        <img class="foto" src="/kompas.jpg" alt="Kompas">
+
+
+    </div>
+
+</body>
+
+</html>

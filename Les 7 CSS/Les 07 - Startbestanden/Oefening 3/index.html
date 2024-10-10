@@ -9,7 +9,47 @@
     <title>Les 06 - Oef 03</title>
 </head>
 
+<style>
+.container {
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .kolom {
+            padding: 15px;
+        }
+
+        .kolom-links {
+            width: 30%;
+        }
+
+        .kolom-rechts {
+            width: 70%;
+        }
+
+        @media (max-width: 600px) {
+            .kolom-links,
+            .kolom-rechts {
+                width: 100%;
+            }
+        }
+</style>
+
+
+
 <body>
+
+    <div class="container">
+        <div class="kolom kolom-links">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        <div class="kolom kolom-rechts">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+    </div>
 
 </body>
 

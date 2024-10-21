@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: white;
+  color: black;
+  overflow-x: hidden; /* SCROLL BALK WEGHALEN */
+  margin: 0;
+  position: relative;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 13px;
+}
+
+.container-afbeelding {
+  display: flex; 
+  justify-content: left; 
+}
+
+/*CSS voor afbeelding op de homepagina*/
+.mezelfAfbeelding
+{
+  max-width: 100%;
+  width: 280px;
+  height: auto;
+  margin-top: 7px;
+  border: solid 5px rgb(77, 77, 77);
+  box-shadow: 2px 2px rgb(77, 77, 77);
+  margin: 20px;
+  border-radius: 8px
+}
+
+@media (max-width: 480px) { 
+  .mezelfAfbeelding {
+      width: 100%; 
+      margin: 5px auto; 
+  }
+}
+
+/* ALLE CSS VAN NAVIGATIE MENU */
+nav {
+  background-color: rgb(77, 77, 77);
+  padding: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.navigatie-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;   
+}
+
+.navigatie-menu li {
+  display: inline;
+}
+
+.navigatie-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
+
+/* Hover over menu item */
+.navigatie-menu li a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+/* NAVIGATIE BALK RESPONSIVE MAKEN */
+@media (max-width: 768px) {
+    nav {
+      padding: 5px; 
+      height: auto;
+    }
+  
+    .navigatie-menu {
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: space-between; 
+    }
+
+    .navigatie-menu li {
+      display: block; 
+      margin-bottom: 10px; 
+    }
+  
+    .navigatie-menu li a {
+      padding: 10px 12px; 
+      font-size: 14px; 
+    }
+  }
+
+
+/*Tekst box OP DE HOME PAGINA */
+.tekst-box {
+  position: absolute;
+  background-color: rgb(219, 219, 219);
+  color: black;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  max-width: 600px;
+  height: 250px;
+  font-size: 15px;
+  margin-bottom: 47px;
+  border-radius: 8px;
+}
+
+.socials
+{
+  position: fixed;
+  background-color: rgb(219, 219, 219);
+  padding: 20px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: auto;
+  max-width: 600px;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+
+
+/*Responsive maken */
+@media (max-width: 480px) {
+  .tekst-box {
+    max-width: 95%; 
+    padding: 10px; 
+    font-size: 13px; 
+    right: 2.5%; 
+    left: 2.5%; 
+    bottom: 5px; 
+    border-radius: 4px; 
+  }
+}
+
+
+/* ALLE CSS VAN HET CV */
+.cv-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*In het midden zetten */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #9e9e9e;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.cvTitel {
+  margin-bottom: 10px;
+  color: #868686;
+  border-bottom: 2px solid #575757;
+  padding-bottom: 5px;
+}
+
+/*Tussentitels*/
+h3 {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.opleiding {
+  margin-bottom: 10px;
+  color: #868686;
+  border-bottom: 2px solid #575757;
+}
+
+/* ALLE CSS VAN CONTACT PAGINA */
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  flex-wrap: wrap;
+
+  .form-container {
+    background-color: rgb(219, 219, 219);
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .contact-form-titel {
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .info-section {
+    height: auto;
+    width: 200px;
+    background-color: rgb(219, 219, 219);
+    padding: 15px;
+    border-radius: 8px;
+    align-self: center;
+    text-align: center;
+  }
+
+  /* BRUIKBAAR MAKEN VOOR OP KLEINERE SCHERMEN */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .info-section {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+}

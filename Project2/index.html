@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Portfolio Siebe Pauwels</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,14 +12,11 @@
   </head>
   <body class="bg-dark text-white">
 
-    <nav class="navbar navbar-expand-lg bg-light border-bottom border-body"
-      data-bs-theme="light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
       <div class="container-fluid">
         <a class="navbar-brand me-auto" href="/index.html">Homepagina</a>
-        <button class="navbar-toggler" type="button"
-          data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false"
-          aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,7 +28,7 @@
               <a class="nav-link" href="/pages/interesses.html">Interesses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/cv.html">curriculum vitae</a>
+              <a class="nav-link" href="/pages/cv.html">Curriculum Vitae</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/pages/contact.html">Contact</a>
@@ -41,94 +38,127 @@
       </div>
     </nav>
 
-    <div class="px-4 my-3 text-center">
-      <img class="d-block mx-auto mb-4 img-fluid" src="/img/logo5.png" alt />
-      <div class="col-lg-6 mx-auto">
+    <section class="text-center py-5">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Siebe Pauwels</h1>
+        <p class="lead">Student Graduaat Programmeren aan Thomas More</p>
+      </div>
+    </section>
+
+    <main class="container mb-4">
+      <div class="card text-dark bg-light mb-3">
+        <div class="card-body">
+          <h3 class="card-title">Wie ben ik?</h3>
+          <p class="card-text">
+            Mijn naam is Siebe Pauwels, een student uit de richting Graduaat Programmeren op Thomas More in Geel. Momenteel zit ik in mijn 1ste jaar van mijn 2 jarige opleiding. Voor deze opleiding heb ik op het Sint Jan-Berchmanscollege gezeten gesitueerd in Mol. Hier heb ik in het 5de en 6de middelbaar informaticabeheer gedaan, waar ik vooral C# en HTML heb geleerd. Dit waren 2 leerrijke jaren en heb hier dus ook veel uit gehaald!
+          </p>
+        </div>
+      </div>
+
+
+    <!-- Secties als Cards -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Ervaring</h5>
+              <p class="card-text">Bekijk mijn eerdere projecten en ervaringen in programmeren.</p>
+              <a href="/pages/ervaring.html" class="btn btn-primary">Meer info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Interesses</h5>
+              <p class="card-text">Leer over mijn interesses binnen en buiten de IT-wereld.</p>
+              <a href="/pages/interesses.html" class="btn btn-primary">Meer info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Curriculum Vitae</h5>
+              <p class="card-text">Bekijk mijn opleiding en professionele achtergrond.</p>
+              <a href="/pages/cv.html" class="btn btn-primary">Bekijk CV</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <main class="container">
-      <hr>
-
-      <div class="row">
-        <div class="col-12 col-md-7 mt-4">
-          <h3 class="font-weight-bold">Wie ben ik?</h3>
-          <p>Mijn naam is Siebe Pauwels, een student uit de richting Graduaat Programmeren op Thomas More in Geel. Momenteel zit ik in mijn 1ste jaar van mijn 2 jarige opleiding. Voor deze opleiding heb ik op het Sint Jan-Berchmanscollege gezeten gesitueerd in Mol. Hier heb ik in het 5de en 6de middelbaar informaticabeheer gedaan, waar ik vooral C# en HTML heb geleerd. Dit waren 2 leerrijke jaren en heb hier dus ook veel uit gehaald!</p>
-        </div>
-        <div class="col-12 col-md-5 mt-4">
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/img/hond.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/img/hond.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/img/hond.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button"
-              data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"
-                aria-hidden="true"></span>
-              <span class="visually-hidden">Vorige</span>
-            </button>
-            <button class="carousel-control-next" type="button"
-              data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon"
-                aria-hidden="true"></span>
-              <span class="visually-hidden">volgende</span>
-            </button>
+      <!-- Carousel -->
+      <div class="card mb-3 mt-4">
+        <div id="carouselExampleIndicators" class="carousel slide w-100 mx-auto" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/img/hond.jpg" class="d-block w-100" alt="Hond 1">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Mijn trouwe vriend</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/img/hond.jpg" class="d-block w-100" alt="Hond 2">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Een wandeling in het park</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/img/hond.jpg" class="d-block w-100" alt="Hond 3">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Gelukkige momenten</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Vorige</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Volgende</span>
+          </button>
         </div>
-     
+      </div>
+    </main>
 
-      </main>
+    <!-- Modal -->
+    <div class="text-center my-4">
+      <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Mijn gegevens
+      </button>
+    </div>
 
-      <footer class="bg-dark text-center text-white py-4 mt-5">
-        <div class="container">
-            <p class="mb-1">&copy; 2023 Siebe Pauwels. Alle rechten voorbehouden.</p>
-        </div>
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Mijn gegevens
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content bg-light text-dark"> <!-- Voeg bg-light en text-dark toe hier -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-light text-dark text-center">
           <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Algemene informatie</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Algemene informatie</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-              <p>Email: r1045045@student.thomasmore.be</p>
-              <p>Telefoon: +32 468 --</p>
+            <p>Email: r1045045@student.thomasmore.be</p>
+            <p>Telefoon: +32 468 --</p>
           </div>
           <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Sluiten</button>
           </div>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
 
-</div>
+    <footer class="bg-dark text-center text-light py-4 mt-5">
+      <div class="container">
+        <p class="mb-1">&copy; 2023 Siebe Pauwels. Alle rechten voorbehouden.</p>
+      </div>
     </footer>
-
-    
-
-    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

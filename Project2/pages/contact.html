@@ -34,27 +34,30 @@
     <h1 class="display-4 fw-bold mt-4 text-center fs-1">Contact opnemen</h1>
     <hr>
 
-    <div class="info-section mt-4">
-        <h2>Hoe kunt u mij bereiken?</h2>
-        <p>
-            Vul het contactformulier in en ik zal binnen de 2 werkdagen contact met u opnemen.
-            <hr>
-            Voer uw gegevens correct in!
-        </p>
-        <hr>
-        <p>
-            U kunt mij ook meteen bereiken via E-mail: <a href="mailto:r1045045@student.thomasmore.be">r1045045@student.thomasmore.be</a>
-            <hr>
-            of telefonisch contact opnemen via: +32 468 --
-        </p>
-        <hr>
-        <p>
-            Alvast bedankt voor uw begrip!
-        </p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
-            Contactformulier
-        </button>
-    </div>
+    <div class="container mt-4">
+      <div class="card text-white bg-dark shadow-sm border border-secondary">
+          <div class="card-body p-4">
+              <h2 class="card-title">Hoe kunt u mij bereiken?</h2>
+              <p class="card-text">
+                  Vul het contactformulier in en ik zal binnen de 2 werkdagen contact met u opnemen.
+              </p>
+              <hr>
+              <p class="card-text">Voer uw gegevens correct in!</p>
+              <hr>
+              <p class="card-text">
+                  U kunt mij ook meteen bereiken via E-mail: 
+                  <a href="mailto:r1045045@student.thomasmore.be">r1045045@student.thomasmore.be</a>
+              </p>
+              <hr>
+              <p class="card-text">of telefonisch contact opnemen via: +32 468 --</p>
+              <hr>
+              <p class="card-text">Alvast bedankt voor uw begrip!</p>
+              <button type="button" class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
+                  Contactformulier
+              </button>
+          </div>
+      </div>
+  </div>
 
 <!-- Modal voor Contactformulier -->
 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
@@ -90,7 +93,7 @@
                         <label for="bericht" class="form-label text-dark">Bericht:</label>
                         <textarea class="form-control" id="bericht" name="bericht" placeholder="Waarom wilt u contact opnemen?" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Verzend</button>
+                    <button type="submit" class="btn btn-dark">Verzend</button>
                 </form>
             </div>
         </div>

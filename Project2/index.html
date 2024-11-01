@@ -14,8 +14,8 @@
 
 .card:hover {
   transform: scale(1.02); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  transition: 0.4s; /* Animatie voor een vloeiender effect */
+  box-shadow: 0 4px 8px #ff070733; 
+  transition: 0.4s; 
 }
 
 </style>
@@ -51,8 +51,8 @@
 
   <section class="text-center py-5">
     <div class="container">
-      <h1 class="display-4 fw-bold animate__animated animate__zoomIn" style="animation-delay: 0.8s">Siebe Pauwels</h1>
-      <p class="lead animate__animated animate__fadeInLeft" style="animation-delay: 0.8s"> Student Graduaat Programmeren aan Thomas More</p>
+      <h1 class="display-4 fw-bold animate__animated animate__zoomIn" style="animation-delay: 0.5s">Siebe Pauwels</h1>
+      <p class="lead animate__animated animate__fadeInLeft" style="animation-delay: 0.5s"> Student Graduaat Programmeren aan Thomas More</p>
     </div>
   </section>
 
@@ -112,10 +112,18 @@
         </div>
       </div>
 
-      <div class="col-sm-6 text-center mt-4 mb-3">
-        <h2 class="animate__animated animate__backInRight" style="animation-delay: 0.8s">Mijn cv bekijken</h2>
-        <hr>
+      <div class="col-sm-6 mt-4 mb-3">
+        <div class="card h-100 text-center d-flex align-items-center justify-content-center bg-light border border-dark">
+          <div class="card-body d-flex flex-column align-items-center">
+            <h2 class="card-title animate__animated animate__backInRight" style="animation-delay: 0.5s">Mijn cv bekijken</h2>
+            <hr style="width: 100%;">
+            <a href="/pages/cv.html" class="btn btn-dark btn-lg mt-3">Bekijk mijn CV</a>
+
+            <img src="/img/cv.png" class="mt-4" alt="Kleine afbeelding" style="width: 100px;">
+          </div>
+        </div>
       </div>
+    </div>
     
   </main>
 

@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contactpagina</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
+<style>
+
+    .card:hover {
+      transform: scale(1.02); 
+      box-shadow: 0 4px 8px #ff070733; 
+      transition: 0.4s; 
+    }
+</style>
+
 <body class="bg-dark text-white">
 
 <nav class="navbar navbar-expand-lg bg-light border-bottom border-body" data-bs-theme="light">
@@ -31,11 +42,11 @@
 </nav>
 
 <main class="container">
-    <h1 class="display-4 fw-bold mt-4 text-center fs-1">Contact opnemen</h1>
+    <h1 class="display-4 fw-bold mt-4 mb-4 text-center fs-1 animate__animated animate__zoomIn" style="animation-delay: 0.5s">Contact opnemen</h1>
     <hr>
 
     <div class="container mt-4">
-      <div class="card text-white bg-dark shadow-sm border border-secondary">
+      <div class="card text-dark bg-light shadow-sm border border-secondary">
           <div class="card-body p-4">
               <h2 class="card-title">Hoe kunt u mij bereiken?</h2>
               <p class="card-text">
@@ -52,7 +63,7 @@
               <p class="card-text">of telefonisch contact opnemen via: +32 468 --</p>
               <hr>
               <p class="card-text">Alvast bedankt voor uw begrip!</p>
-              <button type="button" class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
+              <button type="button" class="btn btn-dark mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
                   Contactformulier
               </button>
           </div>
